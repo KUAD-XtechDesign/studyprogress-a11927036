@@ -1,0 +1,64 @@
+html {
+  color: #333;
+  background: #fff;
+
+  font-size: 14px;
+  line-height: 1:8;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+a{
+  color: #333;
+}
+
+ li {
+   list-style-position: inside;
+ }
+
+
+  .mb_s{
+    margin-bottom: 10px;
+  }
+
+  .mb_s{
+    margin-bottom: 20px;
+  }
+
+  .mb_s{
+    margin-bottom: 40px;
+  }
+
+  h1 {
+  position: relative;/*相対位置*/
+  padding-left: 0.8em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+}
+h1:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f246";/*アイコンのユニコード*/
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: 0;/*アイコンの位置*/
+  color: silver; /*アイコン色*/
+  -webkit-animation:blink 0.5s ease-in-out infinite alternate;
+  animation:blink 0.5s ease-in-out infinite alternate;
+}
+@-webkit-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
